@@ -144,7 +144,7 @@ function addToCart(name, price) {
  updateCart();
  alert(name + ' added to trolley!');
 }
-
+#
 function updateCart() {
  let cartList = document.getElementById('cart-list');
  let total = cart.reduce((sum, item) => sum + item.price, 0);
