@@ -32,7 +32,7 @@
    left: 0;
    width: 100%;
    height: 20px;
-   background: url('https://i.ibb.co/pdwr4tN/choc-drip.png') repeat-x;
+   background: url('CHOCOSTIXX TITLE.png') repeat-x;
  }
  nav {
    text-align: center;
