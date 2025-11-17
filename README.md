@@ -87,7 +87,7 @@
 </head>
 <body>
 <header>
- <div class="logo">Chocostixx<span class="choc-drip"></span></div>
+ <div img src="CHOCOSTIXX TITLE.png" alt="Chocostixx Logo" width="400"<span class="choc-drip"></span></div>
  <p style="font-size:20px; margin-top:10px;">Get your fix with Chocostixx!</p>
  <nav>
    <button onclick="showSection('home')">Home</button>
