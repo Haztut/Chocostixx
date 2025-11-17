@@ -32,7 +32,7 @@
    left: 0;
    width: 100%;
    height: 20px;
-   background: url('CHOCOSTIXX TITLE.png') repeat-x;
+   <img src="CHOCOSTIXX TITLE.png">
  }
  nav {
    text-align: center;
