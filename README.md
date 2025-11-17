@@ -107,19 +107,19 @@
  <h1 style="font-size:40px; color:#ff66cc; text-shadow:0 0 5px #ffccff;">Check out our range!</h1>
  <div class="product-grid">
    <div class="product">
-     <img src="https://i.ibb.co/PCJRsVz/milk.png" alt="Original Chocostixx">
+     <img src="CHOCOSTIXX ORIGINAL.png" alt="Original Chocostixx">
      <h3>Original Chocostixx</h3>
      <p>Milk chocolate with a swirl of white chocolate.</p>
      <button onclick="addToCart('Original Chocostixx', 2.99)">Add to trolley (£2.99)</button>
    </div>
    <div class="product">
-     <img src="https://i.ibb.co/2yCtF8N/raspberry.png" alt="Raspberry Chocostixx">
+     <img src="CHOCOSTIXX RASPBERRY RIPPLE.png" alt="Raspberry Chocostixx">
      <h3>Raspberry Chocostixx</h3>
      <p>Milk chocolate with a pink raspberry swirl.</p>
      <button onclick="addToCart('Raspberry Chocostixx', 3.49)">Add to trolley (£3.49)</button>
    </div>
    <div class="product">
-     <img src="https://i.ibb.co/N6x8fKX/caramel.png" alt="Caramel Chocostixx">
+     <img src="CHOCOSTIXX CARAMEL.png" alt="Caramel Chocostixx">
      <h3>Caramel Chocostixx</h3>
      <p>Milk chocolate with a caramel ribbon swirl.</p>
      <button onclick="addToCart('Caramel Chocostixx', 3.29)">Add to trolley (£3.29)</button>
