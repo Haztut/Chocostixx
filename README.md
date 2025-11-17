@@ -30,7 +30,7 @@
    left: 0;
    width: 100%;
    height: 20px;
-   <img src="CHOCOSTIXX TITLE.png">
+   <img src="CHOCOSTIXX TITLE.png" alt="Chocostixx Logo" width="400">
  }
  nav {
    text-align: center;
