@@ -1,4 +1,6 @@
-<html lang="en">
+
+
+ <html lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -151,6 +153,76 @@ function updateCart() {
  cartList.innerHTML = cart.map(i => `<p>${i.name} - £${i.price.toFixed(2)}</p>`).join('');
  document.getElementById('total').innerText = 'Total: £' + total.toFixed(2);
 }
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Checkout Plugin</title>
+<script src="https://js.stripe.com/v3/"></script>
+<style>
+    #payment-plugin {
+        padding: 20px;
+        border: 1px solid #ccc;
+        max-width: 400px;
+        font-family: Arial, sans-serif;
+    }
+    #payment-plugin h3 {
+        margin-top: 0;
+    }
+    #checkout-button {
+        margin-top: 15px;
+        padding: 10px 20px;
+        font-size: 16px;
+        background: #0a70ff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    #checkout-button:hover {
+        background: #095ae1;
+    }
+</style>
+</head>
+<body>
+
+<!-- PAYMENT PLUGIN SECTION -->
+<div id="payment-plugin">
+    <h3>Checkout</h3>
+
+    <div>
+        <label>Total amount:</label>
+        <span id="cart-total">$0.00</span>
+    </div>
+
+    <button id="checkout-button">Pay Now</button>
+</div>
+
+<script>
+    // ⚠️ Replace with your Stripe publishable key
+    const stripe = Stripe("YOUR_PUBLISHABLE_KEY");
+
+    // Example: load the cart total (modify based on your trolley system)
+    // If stored in localStorage:
+    const total = localStorage.getItem("cartTotal") || 0;
+    document.getElementById("cart-total").textContent = "$" + total;
+
+    // When the user clicks Pay Now
+    document.getElementById("checkout-button").addEventListener("click", () => {
+        fetch("/create-checkout-session", {   // ⚠️ Replace with your endpoint
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ amount: total })
+        })
+        .then(response => response.json())
+        .then(data => stripe.redirectToCheckout({ sessionId: data.sessionId }))
+        .catch(err => alert("Payment error: " + err.message));
+    });
+
+</script>
+
+</body>
+</html>
 </script>
 
 </body>
