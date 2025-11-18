@@ -1,4 +1,3 @@
-
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -71,6 +70,12 @@
         height: auto;
     }
 
+    .product-name {
+        font-size: 22px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
     .title {
         font-size: 30px;
         font-weight: bold;
@@ -134,14 +139,6 @@
 </div>
 
 <!-- SHOP -->
-    }
-
-    .title {
-        font-size: 30px;
-        font-weight: bold;
-        color: #6b3e18;
-        margin-bottom: 10px;
-    }
 <div id="shop" class="section">
     <div class="title">Check out our range!</div>
 
@@ -149,21 +146,21 @@
 
         <div class="product">
             <img src="CHOCOSTIXX ORIGINAL.png" alt="Original Chocostixx">
-            <title>Original</title>
+            <div class="product-name" style="color:#6b3e18;">Original</div>
             <div class="price">£2.99</div>
             <button class="add-btn" onclick="addToCart('Original Chocostixx', 2.99)">Add to Trolley</button>
         </div>
 
         <div class="product">
             <img src="CHOCOSTIXX RASPBERRY RIPPLE.png" alt="Raspberry Chocostixx">
-            <title>Raspberry Ripple</title>
+            <div class="product-name" style="color:#ff4da6;">Raspberry Ripple</div>
             <div class="price">£3.49</div>
             <button class="add-btn" onclick="addToCart('Raspberry Chocostixx', 3.49)">Add to Trolley</button>
         </div>
 
         <div class="product">
             <img src="CHOCOSTIXX CARAMEL.png" alt="Caramel Chocostixx">
-            <title>Caramel</title>
+            <div class="product-name" style="color:#c88b3a;">Caramel</div>
             <div class="price">£3.49</div>
             <button class="add-btn" onclick="addToCart('Caramel Chocostixx', 3.49)">Add to Trolley</button>
         </div>
@@ -214,23 +211,17 @@ function updateCart() {
     else payBtn.style.display = "none";
 }
 
-/* -------------------------------
-   WONDERFUL CHECKOUT INTEGRATION
--------------------------------- */
 function startWonderfulPayment() {
 
-    // SUM PRICE
     let total = cart.reduce((sum, item) => sum + item.price, 0);
 
-    // CREATE WONDERFUL PAYMENT LINK
-    // Replace YOUR_WONDERFUL_MERCHANT_ID with your real merchant ID
     let url = `https://checkout.wonderful.co/pay?
-        merchantId=Chocostixx
-        amount=£{total.toFixed(2)}&
+        merchantId=Chocostixx&
+        amount=${total.toFixed(2)}&
         currency=GBP&
         reference=ChocostixxOrder`;
 
-    url = url.replace(/\s+/g, ''); // clean spaces
+    url = url.replace(/\s+/g, ''); 
 
     window.location.href = url;
 }
