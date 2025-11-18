@@ -121,7 +121,7 @@
 <body>
 
 <header>
-    Get your fix with Chocostixx!  
+    <span style="display:none;">Get your fix with Chocostixx!</span>
     <br>
     <img class="logo" src="CHOCOSTIXX TITLE.png" alt="Chocostixx Logo">
 </header>
@@ -183,49 +183,4 @@ let cart = [];
 
 function showSection(id) {
     document.querySelectorAll('.section').forEach(sec => sec.style.display = 'none');
-    document.getElementById(id).style.display = 'block';
-}
-
-function addToCart(name, price) {
-    cart.push({name, price});
-    alert(name + " added to trolley!");
-    updateCart();
-}
-
-function updateCart() {
-    let cartDiv = document.getElementById("cartItems");
-    let totalDiv = document.getElementById("total");
-    let payBtn = document.getElementById("payButton");
-
-    cartDiv.innerHTML = "";
-    let total = 0;
-
-    cart.forEach(item => {
-        cartDiv.innerHTML += `<div class="cart-item">${item.name} – £${item.price.toFixed(2)}</div>`;
-        total += item.price;
-    });
-
-    totalDiv.innerHTML = "Total: £" + total.toFixed(2);
-
-    if (cart.length > 0) payBtn.style.display = "inline-block";
-    else payBtn.style.display = "none";
-}
-
-function startWonderfulPayment() {
-
-    let total = cart.reduce((sum, item) => sum + item.price, 0);
-
-    let url = `https://checkout.wonderful.co/pay?
-        merchantId=Chocostixx&
-        amount=${total.toFixed(2)}&
-        currency=GBP&
-        reference=ChocostixxOrder`;
-
-    url = url.replace(/\s+/g, ''); 
-
-    window.location.href = url;
-}
-</script>
-
-</body>
-</html>
+    document.getElementById(id).style.di
