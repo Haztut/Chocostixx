@@ -192,7 +192,7 @@ function updateCart() {
 
     <div>
         <label>Total amount:</label>
-        <span id="cart-total">$0.00</span>
+        <span id="cart-total">£0.00</span>
     </div>
 
     <button id="checkout-button">Pay Now</button>
@@ -205,7 +205,7 @@ function updateCart() {
     // Example: load the cart total (modify based on your trolley system)
     // If stored in localStorage:
     const total = localStorage.getItem("cartTotal") || 0;
-    document.getElementById("cart-total").textContent = "$" + total;
+    document.getElementById("cart-total").textContent = "£" + total;
 
     // When the user clicks Pay Now
     document.getElementById("checkout-button").addEventListener("click", () => {
@@ -219,10 +219,6 @@ function updateCart() {
         .catch(err => alert("Payment error: " + err.message));
     });
 
-</script>
-
-</body>
-</html>
 </script>
 
 </body>
