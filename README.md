@@ -141,18 +141,21 @@
 
         <div class="product">
             <img src="CHOCOSTIXX ORIGINAL.png" alt="Original Chocostixx">
+            <Original>
             <div class="price">£2.99</div>
             <button class="add-btn" onclick="addToCart('Original Chocostixx', 2.99)">Add to Trolley</button>
         </div>
 
         <div class="product">
-            <img src="CHOCOSTIXX RASPBERRY.png" alt="Raspberry Chocostixx">
+            <img src="CHOCOSTIXX RASPBERRY RIPPLE.png" alt="Raspberry Chocostixx">
+            <Raspberry Ripple>
             <div class="price">£3.49</div>
             <button class="add-btn" onclick="addToCart('Raspberry Chocostixx', 3.49)">Add to Trolley</button>
         </div>
 
         <div class="product">
             <img src="CHOCOSTIXX CARAMEL.png" alt="Caramel Chocostixx">
+            <Caramel>
             <div class="price">£3.49</div>
             <button class="add-btn" onclick="addToCart('Caramel Chocostixx', 3.49)">Add to Trolley</button>
         </div>
