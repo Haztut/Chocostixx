@@ -1,6 +1,4 @@
-
-
- <html lang="en">
+<html lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -153,7 +151,6 @@ function updateCart() {
  cartList.innerHTML = cart.map(i => `<p>${i.name} - £${i.price.toFixed(2)}</p>`).join('');
  document.getElementById('total').innerText = 'Total: £' + total.toFixed(2);
 }
-
 </script>
 
 </body>
