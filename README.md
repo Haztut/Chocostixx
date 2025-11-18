@@ -1,155 +1,227 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<title>Chocostixx – Get your fix with Chocostixx!</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <style>
- body {
-   margin: 0;
-   font-family: Arial, sans-serif;
-   background: #fff7e6;
-   color: #4b2e19;
- }
- header {
-   text-align: center;
-   padding: 40px 20px;
- }
- .logo {
-   font-size: 64px;
-   font-weight: bold;
-   color: #ff66cc;
-   text-shadow: 0 0 5px #ffccff;
-   position: relative;
- }
- .logo span {
-   position: relative;
-   display: inline-block;
- }
- .choc-drip {
-   position: absolute;
-   bottom: -10px;
-   left: 0;
-   width: 100%;
-   height: 20px;
-   <img src="CHOCOSTIXX TITLE.png" alt="Chocostixx Logo" width="400">
- }
- nav {
-   text-align: center;
-   margin-top: 20px;
- }
- nav button {
-   background: #ff66cc;
-   color: white;
-   border: none;
-   padding: 12px 24px;
-   border-radius: 20px;
-   font-size: 18px;
-   cursor: pointer;
- }
- .section {
-   display: none;
-   padding: 20px;
-   text-align: center;
- }
- .product-grid {
-   display: flex;
-   justify-content: center;
-   gap: 30px;
-   flex-wrap: wrap;
- }
- .product {
-   background: white;
-   padding: 20px;
-   border-radius: 20px;
-   width: 250px;
-   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
- }
- .product img {
-   width: 100%;
-   border-radius: 15px;
- }
- .product button {
-   background: #ff66cc;
-   color: white;
-   border: none;
-   padding: 10px 20px;
-   border-radius: 20px;
-   cursor: pointer;
- }
- #cart-list {
-   max-width: 400px;
-   margin: 0 auto;
-   background: white;
-   padding: 20px;
-   border-radius: 20px;
-   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
- }
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f7d7b5;
+    }
+
+    header {
+        background: #6b3e18;
+        padding: 20px;
+        text-align: center;
+        color: white;
+        font-size: 28px;
+        font-weight: bold;
+        border-bottom: 6px solid #4a2b12;
+    }
+
+    .logo {
+        width: 350px;
+        margin-top: 10px;
+    }
+
+    nav {
+        text-align: center;
+        margin: 20px;
+    }
+    nav button {
+        padding: 12px 25px;
+        background: #6b3e18;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 18px;
+    }
+    nav button:hover {
+        background: #4a2b12;
+    }
+
+    .section {
+        display: none;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .product-grid {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+
+    .product {
+        background: #fff;
+        border-radius: 20px;
+        padding: 20px;
+        width: 280px;
+        box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    }
+
+    .product img {
+        width: 200px;
+        height: auto;
+    }
+
+    .title {
+        font-size: 30px;
+        font-weight: bold;
+        color: #6b3e18;
+        margin-bottom: 10px;
+    }
+
+    .price {
+        font-size: 22px;
+        font-weight: bold;
+        color: #4a2b12;
+    }
+
+    .add-btn {
+        margin-top: 10px;
+        padding: 10px 20px;
+        background: #6b3e18;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .cart-item {
+        font-size: 22px;
+        margin: 10px 0;
+    }
+
+    #payButton {
+        margin-top: 20px;
+        padding: 15px 25px;
+        background: #28a745;
+        color: white;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+        font-size: 20px;
+        display: none;
+    }
 </style>
+
 </head>
 <body>
+
 <header>
- <img src="CHOCOSTIXX TITLE.png" alt="Chocostixx Logo" width="400">
- <p style="font-size:20px; margin-top:10px;">Get your fix with Chocostixx!</p>
- <nav>
-   <button onclick="showSection('home')">Home</button>
-   <button onclick="showSection('shop')">Shop</button>
-   <button onclick="showSection('cart')">🛒 Trolley</button>
- </nav>
+    Get your fix with Chocostixx!  
+    <br>
+    <img class="logo" src="INSERT_LOGO_PNG_HERE" alt="Chocostixx Logo">
 </header>
 
-<section id="home" class="section" style="display:block;">
- <h1>Welcome to Chocostixx!</h1>
- <p>A fun, colourful, chocolate snack that twists up just like a glue stick!</p>
-</section>
+<nav>
+    <button onclick="showSection('home')">Home</button>
+    <button onclick="showSection('shop')">Shop</button>
+    <button onclick="showSection('cart')">Trolley</button>
+</nav>
 
-<section id="shop" class="section">
- <h1 style="font-size:40px; color:#ff66cc; text-shadow:0 0 5px #ffccff;">Check out our range!</h1>
- <div class="product-grid">
-   <div class="product">
-     <img src="CHOCOSTIXX ORIGINAL.png" alt="Original Chocostixx">
-     <h3>Original Chocostixx</h3>
-     <p>Milk chocolate with a swirl of white chocolate.</p>
-     <button onclick="addToCart('Original Chocostixx', 2.99)">Add to trolley (£2.99)</button>
-   </div>
-   <div class="product">
-     <img src="CHOCOSTIXX RASPBERRY RIPPLE.png" alt="Raspberry Chocostixx">
-     <h3>Raspberry Chocostixx</h3>
-     <p>Milk chocolate with a pink raspberry swirl.</p>
-     <button onclick="addToCart('Raspberry Chocostixx', 3.49)">Add to trolley (£3.49)</button>
-   </div>
-   <div class="product">
-     <img src="CHOCOSTIXX CARAMEL.png" alt="Caramel Chocostixx">
-     <h3>Caramel Chocostixx</h3>
-     <p>Milk chocolate with a caramel ribbon swirl.</p>
-     <button onclick="addToCart('Caramel Chocostixx', 3.29)">Add to trolley (£3.29)</button>
-   </div>
- </div>
-</section>
+<!-- HOME -->
+<div id="home" class="section" style="display:block;">
+    <h1 style="color:#6b3e18;">Welcome to Chocostixx!</h1>
+    <p style="font-size:20px;">The official home of the world’s most fun chocolate snack!</p>
+</div>
 
-<section id="cart" class="section">
- <h1>Your Trolley</h1>
- <div id="cart-list"></div>
- <h2 id="total"></h2>
-</section>
+<!-- SHOP -->
+<div id="shop" class="section">
+    <div class="title">Check out our range!</div>
+
+    <div class="product-grid">
+
+        <div class="product">
+            <img src="INSERT_ORIGINAL_PNG_HERE" alt="Original Chocostixx">
+            <div class="price">£2.99</div>
+            <button class="add-btn" onclick="addToCart('Original Chocostixx', 2.99)">Add to Trolley</button>
+        </div>
+
+        <div class="product">
+            <img src="INSERT_RASPBERRY_PNG_HERE" alt="Raspberry Chocostixx">
+            <div class="price">£3.49</div>
+            <button class="add-btn" onclick="addToCart('Raspberry Chocostixx', 3.49)">Add to Trolley</button>
+        </div>
+
+        <div class="product">
+            <img src="INSERT_CARAMEL_PNG_HERE" alt="Caramel Chocostixx">
+            <div class="price">£3.49</div>
+            <button class="add-btn" onclick="addToCart('Caramel Chocostixx', 3.49)">Add to Trolley</button>
+        </div>
+
+    </div>
+</div>
+
+<!-- CART -->
+<div id="cart" class="section">
+    <h2 style="color:#6b3e18;">Your Trolley</h2>
+    <div id="cartItems"></div>
+    <h3 id="total" style="margin-top:20px;"></h3>
+
+    <!-- WONDERFUL PAY BUTTON -->
+    <button id="payButton" onclick="startWonderfulPayment()">Pay Now</button>
+</div>
 
 <script>
 let cart = [];
 
 function showSection(id) {
- document.querySelectorAll('.section').forEach(sec => sec.style.display = 'none');
- document.getElementById(id).style.display = 'block';
+    document.querySelectorAll('.section').forEach(sec => sec.style.display = 'none');
+    document.getElementById(id).style.display = 'block';
 }
 
 function addToCart(name, price) {
- cart.push({ name, price });
- updateCart();
- alert(name + ' added to trolley!');
+    cart.push({name, price});
+    alert(name + " added to trolley!");
+    updateCart();
 }
 
 function updateCart() {
- let cartList = document.getElementById('cart-list');
- let total = cart.reduce((sum, item) => sum + item.price, 0);
- cartList.innerHTML = cart.map(i => `<p>${i.name} - £${i.price.toFixed(2)}</p>`).join('');
- document.getElementById('total').innerText = 'Total: £' + total.toFixed(2);
+    let cartDiv = document.getElementById("cartItems");
+    let totalDiv = document.getElementById("total");
+    let payBtn = document.getElementById("payButton");
+
+    cartDiv.innerHTML = "";
+    let total = 0;
+
+    cart.forEach(item => {
+        cartDiv.innerHTML += `<div class="cart-item">${item.name} – £${item.price.toFixed(2)}</div>`;
+        total += item.price;
+    });
+
+    totalDiv.innerHTML = "Total: £" + total.toFixed(2);
+
+    if (cart.length > 0) payBtn.style.display = "inline-block";
+    else payBtn.style.display = "none";
+}
+
+/* -------------------------------
+   WONDERFUL CHECKOUT INTEGRATION
+-------------------------------- */
+function startWonderfulPayment() {
+
+    // SUM PRICE
+    let total = cart.reduce((sum, item) => sum + item.price, 0);
+
+    // CREATE WONDERFUL PAYMENT LINK
+    // Replace YOUR_WONDERFUL_MERCHANT_ID with your real merchant ID
+    let url = `https://checkout.wonderful.co/pay?
+        merchantId=YOUR_WONDERFUL_MERCHANT_ID&
+        amount=${total.toFixed(2)}&
+        currency=GBP&
+        reference=ChocostixxOrder`;
+
+    url = url.replace(/\s+/g, ''); // clean spaces
+
+    window.location.href = url;
 }
 </script>
 
