@@ -134,6 +134,14 @@
 </div>
 
 <!-- SHOP -->
+    }
+
+    .title {
+        font-size: 30px;
+        font-weight: bold;
+        color: #6b3e18;
+        margin-bottom: 10px;
+    }
 <div id="shop" class="section">
     <div class="title">Check out our range!</div>
 
