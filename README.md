@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -118,7 +118,7 @@
 <header>
     Get your fix with Chocostixx!  
     <br>
-    <img class="logo" src="INSERT_LOGO_PNG_HERE" alt="Chocostixx Logo">
+    <img class="logo" src="CHOCOSTIXX TITLE.png" alt="Chocostixx Logo">
 </header>
 
 <nav>
@@ -140,19 +140,19 @@
     <div class="product-grid">
 
         <div class="product">
-            <img src="INSERT_ORIGINAL_PNG_HERE" alt="Original Chocostixx">
+            <img src="CHOCOSTIXX ORIGINAL.png" alt="Original Chocostixx">
             <div class="price">£2.99</div>
             <button class="add-btn" onclick="addToCart('Original Chocostixx', 2.99)">Add to Trolley</button>
         </div>
 
         <div class="product">
-            <img src="INSERT_RASPBERRY_PNG_HERE" alt="Raspberry Chocostixx">
+            <img src="CHOCOSTIXX RASPBERRY.png" alt="Raspberry Chocostixx">
             <div class="price">£3.49</div>
             <button class="add-btn" onclick="addToCart('Raspberry Chocostixx', 3.49)">Add to Trolley</button>
         </div>
 
         <div class="product">
-            <img src="INSERT_CARAMEL_PNG_HERE" alt="Caramel Chocostixx">
+            <img src="CHOCOSTIXX CARAMEL.png" alt="Caramel Chocostixx">
             <div class="price">£3.49</div>
             <button class="add-btn" onclick="addToCart('Caramel Chocostixx', 3.49)">Add to Trolley</button>
         </div>
@@ -214,8 +214,8 @@ function startWonderfulPayment() {
     // CREATE WONDERFUL PAYMENT LINK
     // Replace YOUR_WONDERFUL_MERCHANT_ID with your real merchant ID
     let url = `https://checkout.wonderful.co/pay?
-        merchantId=YOUR_WONDERFUL_MERCHANT_ID&
-        amount=${total.toFixed(2)}&
+        merchantId=Chocostixx
+        amount=£{total.toFixed(2)}&
         currency=GBP&
         reference=ChocostixxOrder`;
 
