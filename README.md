@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Chocostixx – Get your fix with Chocostixx!</title>
+<title>Get your fix with Chocostixx!</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
@@ -141,21 +141,21 @@
 
         <div class="product">
             <img src="CHOCOSTIXX ORIGINAL.png" alt="Original Chocostixx">
-            <Original>
+            <title>Original</title>
             <div class="price">£2.99</div>
             <button class="add-btn" onclick="addToCart('Original Chocostixx', 2.99)">Add to Trolley</button>
         </div>
 
         <div class="product">
             <img src="CHOCOSTIXX RASPBERRY RIPPLE.png" alt="Raspberry Chocostixx">
-            <Raspberry Ripple>
+            <title>Raspberry Ripple</title>
             <div class="price">£3.49</div>
             <button class="add-btn" onclick="addToCart('Raspberry Chocostixx', 3.49)">Add to Trolley</button>
         </div>
 
         <div class="product">
             <img src="CHOCOSTIXX CARAMEL.png" alt="Caramel Chocostixx">
-            <Caramel>
+            <title>Caramel</title>
             <div class="price">£3.49</div>
             <button class="add-btn" onclick="addToCart('Caramel Chocostixx', 3.49)">Add to Trolley</button>
         </div>
