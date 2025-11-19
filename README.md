@@ -207,7 +207,7 @@
         <!-- LEFT BOX TEXT -->
         <div class="about-box">
             <!-- 🔶 TYPE YOUR FIRST ABOUT TEXT HERE (LINE TO EDIT) -->
-            Type your first About Us paragraph here.
+            Inspired on a bleak November Monday, Founder and Ceo of Chocostixx.co.uk Harry Tutton sat and thought, how could I revolutionise the chocolate industry? How could I build a snack to eat now, to eat later, to be fun and flavourful, to combine food and design into one lip-smacking treat... And Chocostixx was born.
         </div>
 
         <!-- RIGHT IMAGE -->
@@ -235,7 +235,7 @@
         <!-- RIGHT BOX TEXT -->
         <div class="about-box">
             <!-- 🔶 TYPE YOUR SECOND ABOUT TEXT HERE (LINE TO EDIT) -->
-            Type your second About Us paragraph here.
+            He got to work and in 4 days, a website was built, a prototype created, market research collected that allowed him to understand what the people wanted. In an attempt to achieve net zero, a policy installed where when the snack is enjoyed, instead of the stixx tube being thrown away, it would instead be  returned for sterilisation and the customer would be paid back 50p allowing further chocostixx to be created keeping the small business thriving.
         </div>
 
     </div>
