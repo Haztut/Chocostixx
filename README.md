@@ -163,8 +163,8 @@
 
 <!-- HOME -->
 <div id="home" class="section" style="display:block;">
-    <h1 style="color:#6b3e18;">Welcome to Chocostixx!</h1>
-    <p style="font-size:20px;">The official home of the world’s most fun chocolate snack!</p>
+    <h1 style="color:#6b3e18;">Welcome to Chocostixx.co.uk!</h1>
+    <p style="font-size:20px;">The official home of the world’s first twist up chocolate treat! Any queries or business interests: Email-harrytutton1@gmail.com</p>
 </div>
 
 <!-- SHOP -->
