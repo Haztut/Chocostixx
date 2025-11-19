@@ -213,7 +213,7 @@
         <!-- RIGHT IMAGE -->
         <!-- 🔶 REPLACE THE FILENAME BELOW WITH YOUR PNG NAME -->
         <div>
-            <img class="about-img" src="FOUNDER_IMAGE.png" alt="Founder Image">
+            <img class="about-img" src="Founder image.png" alt="Founder Image">
             <p style="margin-top:5px; font-weight:bold; color:#4a2b12;">
                 Founder and CEO: Harry Tutton
             </p>
@@ -226,7 +226,7 @@
         <!-- LEFT IMAGE -->
         <!-- 🔶 REPLACE THIS FILENAME WITH YOUR PNG NAME -->
         <div>
-            <img class="about-img" src="DESIGN_IMAGE.png" alt="Design Image">
+            <img class="about-img" src="Chocotube.png" alt="Design Image">
             <p style="margin-top:5px; font-weight:bold; color:#4a2b12;">
                 The Design
             </p>
