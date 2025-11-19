@@ -49,6 +49,32 @@
         text-align: center;
     }
 
+    .about-row {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 40px;
+        margin-top: 30px;
+        flex-wrap: wrap;
+    }
+
+    .about-box {
+        width: 350px;
+        min-height: 200px;
+        border: 2px solid #6b3e18;
+        border-radius: 10px;
+        padding: 15px;
+        background: #fff5eb;
+        text-align: left;
+    }
+
+    .about-img {
+        width: 320px;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
     .product-grid {
         display: flex;
         justify-content: center;
@@ -130,6 +156,9 @@
     <button onclick="showSection('home')">Home</button>
     <button onclick="showSection('shop')">Shop</button>
     <button onclick="showSection('cart')">Trolley</button>
+
+    <!-- NEW BUTTON -->
+    <button onclick="showSection('about')">About Us</button>
 </nav>
 
 <!-- HOME -->
@@ -168,13 +197,56 @@
     </div>
 </div>
 
+<!-- ABOUT US -->
+<div id="about" class="section">
+
+    <h1 style="color:#6b3e18;">About Us</h1>
+
+    <div class="about-row">
+
+        <!-- LEFT BOX TEXT -->
+        <div class="about-box">
+            <!-- 🔶 TYPE YOUR FIRST ABOUT TEXT HERE (LINE TO EDIT) -->
+            Type your first About Us paragraph here.
+        </div>
+
+        <!-- RIGHT IMAGE -->
+        <!-- 🔶 REPLACE THE FILENAME BELOW WITH YOUR PNG NAME -->
+        <div>
+            <img class="about-img" src="FOUNDER_IMAGE.png" alt="Founder Image">
+            <p style="margin-top:5px; font-weight:bold; color:#4a2b12;">
+                Founder and CEO: Harry Tutton
+            </p>
+        </div>
+
+    </div>
+
+    <div class="about-row">
+
+        <!-- LEFT IMAGE -->
+        <!-- 🔶 REPLACE THIS FILENAME WITH YOUR PNG NAME -->
+        <div>
+            <img class="about-img" src="DESIGN_IMAGE.png" alt="Design Image">
+            <p style="margin-top:5px; font-weight:bold; color:#4a2b12;">
+                The Design
+            </p>
+        </div>
+
+        <!-- RIGHT BOX TEXT -->
+        <div class="about-box">
+            <!-- 🔶 TYPE YOUR SECOND ABOUT TEXT HERE (LINE TO EDIT) -->
+            Type your second About Us paragraph here.
+        </div>
+
+    </div>
+</div>
+
 <!-- CART -->
 <div id="cart" class="section">
     <h2 style="color:#6b3e18;">Your Trolley</h2>
     <div id="cartItems"></div>
     <h3 id="total" style="margin-top:20px;"></h3>
 
-    <!-- WONDERFUL PAY BUTTON -->
     <button id="payButton" onclick="startWonderfulPayment()">Pay Now</button>
 </div>
 
@@ -212,7 +284,6 @@ function updateCart() {
 }
 
 function startWonderfulPayment() {
-
     let total = cart.reduce((sum, item) => sum + item.price, 0);
 
     let url = `https://checkout.wonderful.co/pay?
@@ -222,7 +293,6 @@ function startWonderfulPayment() {
         reference=ChocostixxOrder`;
 
     url = url.replace(/\s+/g, ''); 
-
     window.location.href = url;
 }
 </script>
